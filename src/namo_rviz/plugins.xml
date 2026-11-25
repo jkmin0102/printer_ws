@@ -1,0 +1,5 @@
+<library path="namo_status_panel">
+  <class name="namo_rviz/StatusPanel" type="namo_rviz::StatusPanel" base_class_type="rviz_common::Panel">
+    <description>Korean read-only mission stages, decision and timing.</description>
+  </class>
+</library>

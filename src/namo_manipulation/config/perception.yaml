@@ -1,0 +1,25 @@
+can_perception:
+  ros__parameters:
+    use_sim_time: true
+    model_path: /home/user2/mobility_simulation/namo_ws/best.pt
+    perception_mode: yolo  # Strict default; sim_red is an explicitly labelled experiment.
+    target_class: coke
+    confidence_threshold: 0.5
+    cpu_threads: 2  # Preserve CPU time for Gazebo and ROS control/sensor callbacks.
+    rgb_topic: /realsense/d435i/color/image_raw
+    depth_topic: /realsense/d435i/aligned_depth_to_color/image_raw
+    camera_info_topic: /realsense/d435i/color/camera_info
+    camera_frame: d435i_color_optical_frame
+    target_frame: base_link
+    support_frame: odom  # Fixed floor frame; full odometry TF accounts for physical base tilt.
+    support_plane_z: 0.0  # Assumes upright can on flat floor, not object ground-truth pose.
+    support_plane_tolerance: 0.02  # Reject depth/TF inconsistency; never use a GT offset.
+    can_diameter: 0.05
+    can_height: 0.135
+    depth_scale: 0.001  # Only for 16UC1; Gazebo 32FC1 is already metres.
+    min_depth: 0.05
+    max_depth: 2.0
+    max_frame_age: 1.0
+    inference_hz: 2.0
+    stable_samples: 3
+    stable_radius: 0.015

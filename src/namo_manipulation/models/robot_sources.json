@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/ROBOTIS-GIT/turtlebot3_manipulation",
+  "commit": "814f140e8e208994dd6159f189993156e3943d98",
+  "files": {
+    "gazebo/materials.xacro": "f97263c04e42b42f0f02423018ee17a831543f7d4957ffa12b6805846c502273",
+    "gazebo/open_manipulator_x.gazebo.xacro": "62ba6e278bdddfb6e6b363e69154b7d8fd44f613703ca14017d7250d2013d9d0",
+    "gazebo/turtlebot3_waffle_pi.gazebo.xacro": "b1fc0ace39328fefb724edb03fc7d9a09fc6e4756a2aef08443bdb386e0ff9e1",
+    "ros2_control/turtlebot3_manipulation_system.ros2_control.xacro": "9804256c8fa8087388c345479d6a5e269d6a81fe5070282378508eee582a36af",
+    "urdf/open_manipulator_x.urdf.xacro": "78f40107b423fb5881b63ec3bd2e66b33982000512b577cd1506be9a97eb6465",
+    "urdf/turtlebot3_manipulation.urdf.xacro": "c7dc19191d4d6ac41c08aab285e9d8dd37d8d0494f800b4fda0e56fc6091d580",
+    "urdf/turtlebot3_waffle_pi.urdf.xacro": "8317a404e0c6f59af6bac2842a6b6677a3c94a5ab21841ed5ea9a11f41ade8b8"
+  },
+  "hand_eye": {
+    "values": {
+      "x": "-0.065",
+      "y": "0.0195",
+      "z": "0.052",
+      "roll": "0.0",
+      "pitch": "0.0",
+      "yaw": "0.0",
+      "parent_frame": "end_effector_link",
+      "child_frame": "d435i_link"
+    },
+    "sources": {
+      "vision_pkg/launch/vision.launch.py": "810c0be26725572434ed5141e085342507dc647c2ccdff1b10a3e7cc0e6fe246",
+      "vision_pkg/launch/vision2.launch.py": "0779b389a5bc5482ba5207fb42ba37049a1f3fcecd5232c680b9e09fa7947146"
+    },
+    "calibration_status": "existing configured transform; not measured calibration"
+  },
+  "generated_urdf_sha256": "d215ddce4c34fd80a68ff87389c6153913f19a2184082d5486344863d799b792",
+  "simulation_overrides": {
+    "rear_ballast_mass": 0.0,
+    "wheel_acceleration": 0.0,
+    "arm_effort_Nm": 2.0,
+    "note": "Force PID, pad contact proxies, base inertia, LDS-02 and aligned RGB-D plugins; official mount joints unchanged"
+  }
+}

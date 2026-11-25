@@ -1,0 +1,6 @@
+# Local isolated ROS build, run logs and recordings (kept locally for validation).
+.namo/
+.namo_manip/
+__pycache__/
+*.py[cod]
+.pytest_cache/

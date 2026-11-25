@@ -1,0 +1,10 @@
+{
+  "provenance": "Code-generated visual approximation; not an official/photographed product label",
+  "purpose": "Visual-domain experiment; inference remains original best.pt on actual Gazebo RGB",
+  "side_radius_m": 0.025,
+  "side_height_m": 0.131,
+  "triangles": 192,
+  "physical_collision_modified": false,
+  "font_source": "/usr/share/fonts/type1/gsfonts/z003034l.pfb",
+  "visible_front": "negative X, label center u=0.5"
+}

@@ -1,0 +1,31 @@
+mission:
+  ros__parameters:
+    use_sim_time: true
+    scenario: A  # Label only; never used by detection/planning/decision.
+    goal_x: 6.0
+    goal_y: 0.0
+    observation_x: 0.0
+    observation_y: 0.0
+    robot_radius: 0.28
+    wall_tolerance: 0.13
+    min_points: 5
+    persistence: 8  # 5 Hz: about 1.4-1.6 s of consistent observations at the corner.
+    removable: true  # Experimental single-object assumption, NOT LiDAR classification.
+    v_eff: 0.20  # Assumed average travel speed including normal turns, not yet calibrated.
+    mock_remove_seconds: 22.0
+    switch_seconds: 0.0  # Only extra pre-drive delay; ordinary turns already in v_eff.
+    decision_margin: 2.0
+    ready_timeout: 90.0
+    action_timeout: 180.0
+    planning_timeout: 12.0
+    clear_timeout: 15.0
+    stage: full  # detect: stop after real scan detection; plan: calculate only; full: execute.
+mock_remover:
+  ros__parameters:
+    use_sim_time: true
+    mock_remove_seconds: 22.0
+    model_name: movable_obstacle
+    stash_x: -2.0
+    stash_y: -2.0
+    stash_z: 0.3
+    service_timeout: 10.0

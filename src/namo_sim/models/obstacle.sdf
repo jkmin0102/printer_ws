@@ -1,0 +1,9 @@
+<?xml version="1.0"?><sdf version="1.6">
+<model name="movable_obstacle"><static>false</static><link name="body">
+<gravity>false</gravity><inertial><mass>100.0</mass><inertia>
+<ixx>11.333333</ixx><iyy>4.6875</iyy><izz>10.020833</izz>
+</inertia></inertial>
+<collision name="collision"><geometry><box><size>0.45 1.0 0.6</size></box></geometry></collision>
+<visual name="visual"><geometry><box><size>0.45 1.0 0.6</size></box></geometry>
+<material><ambient>0.9 0.12 0.04 1</ambient><diffuse>0.9 0.12 0.04 1</diffuse></material>
+</visual></link></model></sdf>

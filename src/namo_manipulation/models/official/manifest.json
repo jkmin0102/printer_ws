@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/ROBOTIS-GIT/turtlebot3_manipulation",
+  "commit": "814f140e8e208994dd6159f189993156e3943d98",
+  "files": {
+    "gazebo/materials.xacro": "f97263c04e42b42f0f02423018ee17a831543f7d4957ffa12b6805846c502273",
+    "gazebo/open_manipulator_x.gazebo.xacro": "62ba6e278bdddfb6e6b363e69154b7d8fd44f613703ca14017d7250d2013d9d0",
+    "gazebo/turtlebot3_waffle_pi.gazebo.xacro": "b1fc0ace39328fefb724edb03fc7d9a09fc6e4756a2aef08443bdb386e0ff9e1",
+    "ros2_control/turtlebot3_manipulation_system.ros2_control.xacro": "9804256c8fa8087388c345479d6a5e269d6a81fe5070282378508eee582a36af",
+    "urdf/open_manipulator_x.urdf.xacro": "78f40107b423fb5881b63ec3bd2e66b33982000512b577cd1506be9a97eb6465",
+    "urdf/turtlebot3_manipulation.urdf.xacro": "c7dc19191d4d6ac41c08aab285e9d8dd37d8d0494f800b4fda0e56fc6091d580",
+    "urdf/turtlebot3_waffle_pi.urdf.xacro": "8317a404e0c6f59af6bac2842a6b6677a3c94a5ab21841ed5ea9a11f41ade8b8"
+  }
+}

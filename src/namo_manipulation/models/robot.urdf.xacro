@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="namo_manipulator" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="official_description" default="official"/>
+  <xacro:include filename="$(arg official_description)/urdf/turtlebot3_manipulation.urdf.xacro"/>
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435i.urdf.xacro"/>
+  <!-- generate_robot.py imports vision.launch.py and composes the screw-frame
+       correction from the expanded RealSense model, without duplicated offsets. -->
+  <xacro:sensor_d435i parent="end_effector_link" name="d435i" use_nominal_extrinsics="true">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:sensor_d435i>
+</robot>

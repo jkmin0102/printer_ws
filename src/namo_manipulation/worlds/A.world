@@ -1,0 +1,37 @@
+<sdf version="1.6"><world name="namo_arm_A">
+    <gravity>0 0 -9.81</gravity><physics type="ode" name="default"><max_step_size>0.001</max_step_size>
+    <real_time_update_rate>1000</real_time_update_rate><ode><solver><iters>100</iters></solver></ode></physics>
+    <include><uri>model://sun</uri></include><include><uri>model://ground_plane</uri></include>
+    <scene><ambient>.8 .8 .8 1</ambient><shadows>false</shadows></scene>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"><ros><namespace>/gazebo</namespace></ros><update_rate>20</update_rate></plugin>
+    <gui fullscreen="0"><camera name="user_camera"><pose>4.75 1.5 6.5 0 1.5707 1.5707</pose><view_controller>orbit</view_controller></camera></gui>
+    <model name="wall_0"><static>true</static><pose>4.2 -0.55 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>11.9 0.2 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>11.9 0.2 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_1"><static>true</static><pose>-1.625 2.7755575615628914e-17 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>0.25 0.9000000000000001 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>0.25 0.9000000000000001 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_2"><static>true</static><pose>-1.0499999999999998 0.5000000000000001 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>1.4000000000000001 0.10000000000000009 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>1.4000000000000001 0.10000000000000009 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_3"><static>true</static><pose>-1.2 0.8000000000000003 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>1.1 0.5000000000000001 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>1.1 0.5000000000000001 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_4"><static>true</static><pose>4.7 1.7000000000000002 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>8.700000000000001 2.5 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>8.700000000000001 2.5 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_5"><static>true</static><pose>10.05 1.7 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>0.1999999999999993 4.3 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>0.1999999999999993 4.3 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_6"><static>true</static><pose>-1.0499999999999998 2.45 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>1.4000000000000001 2.8 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>1.4000000000000001 2.8 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model><model name="wall_7"><static>true</static><pose>4.2 3.95 0.3 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>11.9 0.19999999999999973 0.6</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>11.9 0.19999999999999973 0.6</size></box></geometry>
+    <material><ambient>.64 .68 .73 1</ambient><diffuse>.64 .68 .73 1</diffuse></material></visual></link></model>
+    <model name="place_pad"><static>true</static><pose>-0.425 0.91 0.001 0 0 0</pose>
+    <link name="body"><collision name="collision"><geometry><box><size>0.15000000000000002 0.19999999999999996 0.002</size></box></geometry></collision>
+    <visual name="visual"><geometry><box><size>0.15000000000000002 0.19999999999999996 0.002</size></box></geometry>
+    <material><ambient>.2 .7 .3 1</ambient><diffuse>.2 .7 .3 1</diffuse></material></visual></link></model>
+    </world></sdf>

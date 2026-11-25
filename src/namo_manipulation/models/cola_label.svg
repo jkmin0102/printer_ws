@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<metadata>Generated visual approximation for Gazebo. Not an official or photographed Coca-Cola label.</metadata>
+<rect width="1024" height="1024" fill="#d40016"/>
+<g transform="translate(512,512) rotate(-90)">
+<text x="0" y="65" text-anchor="middle" fill="white" font-family="URW Chancery L" font-size="244">Coca-Cola</text>
+</g>
+<path d="M 705 0 C 640 190 815 350 720 520 C 625 690 645 850 760 1024" fill="none" stroke="white" stroke-width="23"/>
+<path d="M 746 0 C 681 190 856 350 761 520 C 666 690 686 850 801 1024" fill="none" stroke="white" stroke-width="7"/>
+<text x="512" y="48" text-anchor="middle" fill="white" font-family="Liberation Sans" font-size="25">ORIGINAL TASTE</text>
+</svg>
